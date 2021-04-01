@@ -10,7 +10,7 @@
     </include>
     <model name="child">
       <include>
-        <uri>model://child</uri>
+        <uri>model://child_working</uri>
       </include>
       <pose>0.0 0.0 0.0</pose>
     </model>
