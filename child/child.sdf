@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="child_model">
+    <link name='child_link'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <visual name='child_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+      </visual>
+      <collision name='child_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <model name='grandchild_model_in_child'>
+      <pose>0.0 0.0 1.0 0.0 0.0 0.0</pose>
+      <static>1</static>
+      <include>
+        <uri>model://grandchild</uri>
+      </include>
+    </model>
+    <static>1</static>
+  </model>
+</sdf>

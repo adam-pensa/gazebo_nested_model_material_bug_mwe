@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<sdf version="1.7">
+  <model name="grandchild_model">
+    <pose relative_to="">0 0 0 0 0 0</pose>
+    <static>true</static>
+    <link name="grandchild_link">
+      <pose relative_to="">0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name="grandchild_collision">
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="grandchild_visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://grandchild/materials/scripts</uri>
+            <uri>model://grandchild/materials/textures</uri>
+            <name>grandchild</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

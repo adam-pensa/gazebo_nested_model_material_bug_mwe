@@ -1,0 +1,30 @@
+material grandchild
+{
+    technique
+    {
+        pass
+        {
+            ambient 1.0 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0 1.0
+            specular 0.0 0.0 0.0 1.0 0.5
+
+            texture_unit
+            {
+                texture grandchild.png 0
+                filtering none
+            }
+        }
+    }
+}
+material grandchild/White
+{
+    technique
+    {
+        pass
+        {
+            ambient 1.0 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0 1.0
+            specular 0.0 0.0 0.0 1.0 0.5
+        }
+    }
+}
