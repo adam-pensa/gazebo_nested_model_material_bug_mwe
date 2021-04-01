@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name="default">
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="child_working_model_in_world">
+      <include>
+        <uri>model://child_working</uri>
+      </include>
+      <pose>0.0 0.0 0.0</pose>
+    </model>
+    <model name="child_not_working_model_in_world">
+      <include>
+        <uri>model://child_not_working</uri>
+      </include>
+      <pose>1.0 0.0 0.0</pose>
+    </model>
+
+    <model name="foobar">
+      <include>
+        <uri>model://grandchild</uri>
+      </include>
+      <pose>0.0 1.0 0.0</pose>
+    </model>
+    <model name="bazbat">
+      <include>
+        <uri>model://grandchild</uri>
+      </include>
+      <pose>1.0 1.0 0.0</pose>
+    </model>
+  </world>
+</sdf>
