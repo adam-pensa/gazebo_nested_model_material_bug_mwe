@@ -1,11 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <sdf version="1.6">
   <world name="default">
-    <gui>
-      <!-- <camera name='gzclient_camera'>
-        <pose>-5 -5 5 0 0.2 0.0</pose>
-      </camera> -->
-    </gui>
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
     </scene>
@@ -17,7 +12,7 @@
       <include>
         <uri>model://child</uri>
       </include>
-      <pose frame="">0.0 0.0 0.0</pose>
+      <pose>0.0 0.0 0.0</pose>
     </model>
   </world>
 </sdf>
